@@ -112,7 +112,7 @@ var Message = Backbone.Model.extend({
      * Try it yourself, then check out how the function was defined on the
      * previous exercise.
      */
-    this.on('change', renderSomethingOnThePage(this.get('message')));
+    this.on('change', function() {renderSomethingOnThePage(this.get('message'))});
 
   },
 
